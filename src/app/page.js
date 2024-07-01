@@ -3,8 +3,10 @@
 import DialogBox from "@/components/DialogBox/DialogBox";
 import DifferentImages from "@/components/ImageComps/DifferentImages";
 import FlagImages from "@/components/ImageComps/FlagImages";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Toaster } from "sonner";
+import { Toaster, toast } from "sonner";
 
 export default function Home() {
   const handHoldFlagUrl =
@@ -13,6 +15,7 @@ export default function Home() {
     "https://kija-design.dk/images/foedselsdagsflag-kageflag-dannebrogflag-dansk-flag-ss797416_1-t.webp";
 
   const [flagUrl, setFlagUrl] = useState(handHoldFlagUrl);
+  const [showBadeHat, setShowBadeHat] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -47,8 +50,33 @@ export default function Home() {
             <span className="font-bold">MIIIAAAAHHGGG</span> til{" "}
             <span className="font-bold">DIAAAAGGHHH</span>! <br></br>
             Klik lidt rundt og se hvad den kan{" "}
-            <span className="italic">giggleeeee giggglleee....</span>
+            <span className="italic">10hiii f9zzz....</span>
           </p>
+          {!showBadeHat && (
+            <Button
+              variant="destructive"
+              onClick={() => {
+                setShowBadeHat(true);
+                setTimeout(() => setShowBadeHat(false), 3000);
+              }}
+            >
+              KLIK HER HVIS DU TØR <br></br>
+              (showBadeHat)
+            </Button>
+          )}
+
+          {showBadeHat && (
+            <Image
+              src="https://wedobetter.dk/cdn/shop/products/5_7a4a7ab2-b9ef-40dd-aae4-a37ca712b862.jpg?v=1666864560"
+              alt="Hundemad"
+              width={200}
+              height={200}
+              className="m-2 rounded-lg shadow-lg cursor-pointer"
+              onClick={() =>
+                toast.info("JEG ER BARE EN SJOV LILLE NISSE - hihiihi!")
+              }
+            />
+          )}
         </div>
 
         <div className="flex flex-col items-center m-4">
