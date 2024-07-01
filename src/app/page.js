@@ -12,7 +12,7 @@ export default function Home() {
   const classicFlagUrl =
     "https://kija-design.dk/images/foedselsdagsflag-kageflag-dannebrogflag-dansk-flag-ss797416_1-t.webp";
 
-  const [flagUrl, setFlagUrl] = useState(handHoldFlagUrl);  
+  const [flagUrl, setFlagUrl] = useState(handHoldFlagUrl);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -38,8 +38,17 @@ export default function Home() {
 
         <div className="flex flex-col items-center m-4">
           <Toaster />
-          <h1 className="text-lg my-4">TILLYKKE MED DAGEN MARI! 🇩🇰 </h1>
-          <DialogBox />          
+          <h1 className="text-lg my-8">TILLYKKE MED DAGEN MARI! 🇩🇰 </h1>
+          <DialogBox />
+          <p className="font-sans leading-relaxed my-8 text-xl">
+            Jamen så blev det jo din fødselsdag! <br></br>
+            Tak for dig og for at jeg må være med til at fejre dig. <br></br>
+            Her er en lille dum hjemmeside fra{" "}
+            <span className="font-bold">MIIIAAAAHHGGG</span> til{" "}
+            <span className="font-bold">DIAAAAGGHHH</span>! <br></br>
+            Klik lidt rundt og se hvad den kan{" "}
+            <span className="italic">giggleeeee giggglleee....</span>
+          </p>
         </div>
 
         <div className="flex flex-col items-center m-4">
@@ -50,7 +59,6 @@ export default function Home() {
       <div className="flex flex-row justify-center m-4">
         <FlagImages flagUrl={flagUrl} />
       </div>
-
     </main>
   );
 }

@@ -12,6 +12,24 @@ const DifferentImages = () => {
         className="m-4 rounded-lg shadow-lg cursor-pointer"
         onClick={() => toast.info("WOOF! 🐈")}
       />
+      <div className="flex justify-center">
+        <Image
+          src="https://foderbasker.dk/wp-content/uploads/2020/08/hundefoder-priser.jpg"
+          alt="Hundemad"
+          width={35}
+          height={35}
+          className="m-2 rounded-lg shadow-lg cursor-pointer"
+          onClick={() => toast.info("De spiser rigtig meget mad!")}
+        />
+        <Image
+          src="https://foderbasker.dk/wp-content/uploads/2020/08/hundefoder-priser.jpg"
+          alt="Hundemad"
+          width={35}
+          height={35}
+          className="m-2 rounded-lg shadow-lg cursor-pointer"
+          onClick={() => toast.info("De spiser rigtig meget mad!")}
+        />
+      </div>
       <Image
         src="https://cress.gigsalad.com/s3/d/divinity_stables_spring_hill/5cbda8ddc6ae8_300_sq"
         alt="Horse"

@@ -80,14 +80,14 @@ function DialogBox() {
             Selvom vi nogle gange har musiksmag som mistrives.
             <br></br>
             <br></br>
-            Du er mit hjerte, min glæde, mit lys,
+            Du er min kam, min mis og giver mig ej kuldegys,
             <br></br>
-            På din fødselsdag sender jeg dig al verdens kys.
+            På din fødselsdag sender jeg dig al verdens varme og lys.
             <br></br>
             <br></br>
             Så tillykke min mis, på denne særlige dag.
             <br></br>
-            Du er min stjerne, min bedsteven, min drøm,
+            Du er jo bare en super-stjerne
             <br></br>
             må vores dage ende langt ude i det fjerne
             <br></br>
